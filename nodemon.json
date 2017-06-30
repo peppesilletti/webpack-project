@@ -1,0 +1,12 @@
+{
+  "verbose": true,
+  "ignore": [
+    ".git",
+    "node_modules",
+    "src/client"
+  ],
+  "watch": [
+    "src/server",
+		"webpack.config.js"
+  ]
+}
