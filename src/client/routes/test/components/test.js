@@ -18,7 +18,7 @@ const Test = (props) => {
 			{ props.greetings }! I'M TEST!
 			<div>
 				<button onClick={onHolaClick}>Say hola!</button>
-				<button onClick={onCiaoClick}>Say ciao!</button>
+				{/* <button onClick={onCiaoClick}>Say ciao!</button> */}
 			</div>
 		</div>
 	)

@@ -1,15 +1,12 @@
 import { combineReducers } from 'redux'
-import { extend } from 'underscore'
 
 import greetingsReducer from '../routes/test/reducers/greetings_reducer'
 
 export const makeRootReducer = (asyncReducers) => {
-	return combineReducers(
-		extend(
-			{	greetings: greetingsReducer },
-			asyncReducers
-		)
-	)
+	return combineReducers({
+		...asyncReducers,
+		greetings: greetingsReducer
+	})
 }
 
 export const injectReducer = (store, { key, reducer }) => {

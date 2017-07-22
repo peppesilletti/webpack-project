@@ -15,7 +15,6 @@ const VENDOR_LIBS = [
 	'redux',
 	'react-redux',
 	'redux-thunk',
-	'underscore',
 	'react-hot-loader'
 ]
 
@@ -47,7 +46,7 @@ const cssLoaderOptions = {
 // Webpack configuration
 webpackConfig = {
 
-	devtool: (__DEV__) ? "cheap-eval-source-map" : "eval-source-map",
+	devtool: (__DEV__) ? "eval" : "cheap-module-source-map",
 
 	entry: {
 		bundle : (__DEV__)

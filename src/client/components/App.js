@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 
 import CoreLayout from './core_layout'
 
+import getRoutes from '../routes'
 import createStore from '../store/createStore'
 
 // ========================================================
@@ -15,7 +16,7 @@ const store = createStore(initialState)
 class App extends Component {
 
 	render() {
-		const routes = this.props.getRoutes(store)
+		const routes = getRoutes(store)
 
 		return (
 			<Provider store={store}>
