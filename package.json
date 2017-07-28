@@ -35,11 +35,11 @@
     "webpack": "^3.0.0",
     "webpack-bundle-analyzer": "^2.8.2",
     "webpack-dev-middleware": "^1.11.0",
-    "webpack-hot-middleware": "^2.18.0"
+    "webpack-hot-middleware": "^2.18.0",
+    "copy-webpack-plugin": "^4.0.1"
   },
   "dependencies": {
     "config": "^1.26.1",
-    "copy-webpack-plugin": "^4.0.1",
     "debug": "^2.6.8",
     "express": "^4.15.3",
     "react": "^15.6.1",
